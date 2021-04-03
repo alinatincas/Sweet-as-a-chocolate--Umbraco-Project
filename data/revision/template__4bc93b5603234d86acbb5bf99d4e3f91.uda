@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/NewsArea.cshtml",
+  "Master": "umb://template/a601455002e04f17a082e800efd50c43",
+  "Udi": "umb://template/4bc93b5603234d86acbb5bf99d4e3f91",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/a601455002e04f17a082e800efd50c43",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/NewsArea.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "News Area",
+  "Alias": "NewsArea",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "4.0.4"
+}

@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/ContactPage.cshtml",
+  "Master": "umb://template/a601455002e04f17a082e800efd50c43",
+  "Udi": "umb://template/c4207acb490b49da8f9a8d50c37b8304",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/a601455002e04f17a082e800efd50c43",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/ContactPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Contact page",
+  "Alias": "ContactPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "4.0.4"
+}

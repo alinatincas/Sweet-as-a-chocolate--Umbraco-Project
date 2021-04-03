@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "MasterLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card bg-dark text-white home-card">
+            @{
+              var typedMediaPickerSingle = Model.Value<IPublishedContent>("backgroundImage");
+                  if (typedMediaPickerSingle != null)
+                  {
+                      <img src="@typedMediaPickerSingle.Url" class=" background-image card-img home-card-img image-fluid" alt="@typedMediaPickerSingle.Value("alt")" />
+                  }
+              }
+            <div class="card-img-overlay home-body align-items-center d-flex flex-column justify-content-center">
+              <div>
+                <h3 class="card-title">@Model.Headline</h3>
+              </div>
+              <div>
+                <p class="card-text">@Model.Value("bodyText")</p>
+              </div>
+            </div>
+          </div>       
+      </div>
+    </div>
+</div>
+
+ @* <div class="card-img-overlay home-body align-items-center d-flex justify-content-center"> *@

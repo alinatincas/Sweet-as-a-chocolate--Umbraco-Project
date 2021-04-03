@@ -1,0 +1,108 @@
+{
+  "DefaultTemplate": "umb://template/2be1dfb05912495e8fd00d922fc2b00d",
+  "AllowedTemplates": [
+    "umb://template/2be1dfb05912495e8fd00d922fc2b00d"
+  ],
+  "Icon": "icon-home color-brown",
+  "Thumbnail": "folder.png",
+  "Description": "Use this to create a Home Page.",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/f1eb8f16c9a74c6381bee8d101bf4d41",
+      "umb://document-type/6a2fe8e4b3844224bb94a2b6181338db"
+    ]
+  },
+  "Parent": null,
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "a9ff9256-1171-48b4-b2dc-1a1950f40056",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "2d3a4e07-24d5-46ea-8ed8-19f9928c9e7e",
+          "Alias": "headline",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "This will be the headline of the home page.",
+          "Mandatory": false,
+          "Name": "headline",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false
+        },
+        {
+          "Key": "b1c01892-ec88-4b81-a78c-8b2735ab05b6",
+          "Alias": "bodyText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": "This will be the main text on the home page.",
+          "Mandatory": false,
+          "Name": "bodyText",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false
+        },
+        {
+          "Key": "e77128cc-10d6-46c7-8267-917a5891c795",
+          "Alias": "backgroundImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "This will be the background image of the home page",
+          "Mandatory": false,
+          "Name": "Background image",
+          "SortOrder": 2,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/d47d5196908c41c2825729f86a737ad9",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/6a2fe8e4b3844224bb94a2b6181338db",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/f1eb8f16c9a74c6381bee8d101bf4d41",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/2be1dfb05912495e8fd00d922fc2b00d",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Home Page",
+  "Alias": "homePage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "4.0.4"
+}

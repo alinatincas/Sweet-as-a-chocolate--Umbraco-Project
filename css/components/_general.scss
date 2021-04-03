@@ -1,0 +1,19 @@
+@import '../abstracts/globals'; 
+
+main{
+    background-color: $main-color;
+    font-family: $main-font;
+}
+
+#copyright {
+    padding:2%;
+    margin:2%;
+    color: brown!important;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+body{
+    overflow-x: hidden;
+}

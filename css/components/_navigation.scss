@@ -1,0 +1,28 @@
+@import '../abstracts/globals'; 
+
+.bg-light{
+    background-color: $main-color;
+}
+
+.nav-container{
+    padding: 2%;
+}
+
+.navbar-brand {
+    color: $imp-brown;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.a-nav{
+    font-size: 150%;
+    color: $imp-brown;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+
+

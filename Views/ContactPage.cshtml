@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "MasterLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card bg-dark text-white home-card">
+            @{
+                var typedMediaPickerSingle = Model.Value<IPublishedContent>("banner");
+                if (typedMediaPickerSingle != null)
+                {
+                    <img src="@typedMediaPickerSingle.Url" class=" background-image-contact card-img image-fluid" alt="@typedMediaPickerSingle.Value("alt")" />
+                }
+            }
+            <div class="card-img-overlay contact-body">
+              <p class="card-title">@Model.Value("title")</p>              
+            </div>
+          </div>       
+      </div>
+      <div class="row contact-body-text">
+            <div class="col-md-12  card-text-contact">
+                <div>
+                    <h5 class="card-text">@Model.Value("contentText")</h5>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-7 offset-md-5">
+                <div>
+                    @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="a55a729f-d92c-41f9-a15b-66e06bdc2d5f", FormTheme="bootstrap5", ExcludeScripts="0"})
+                </div>
+            </div>              
+        </div>
+      </div>
+    </div>
+</div>

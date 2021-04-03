@@ -1,0 +1,57 @@
+@import '../abstracts/globals'; 
+
+.news-bg-color{
+    background-color: papayawhip;
+    margin: -1%;
+    padding: 2%;
+    a:hover {
+      color: brown;
+  }
+  }
+
+  .articlepreview{
+      margin-bottom: 5%;
+      a{
+        text-decoration: none;
+        color: brown;
+      }
+      p{
+        margin-bottom: 0rem;
+      }
+  }
+
+
+  .article-title{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+  }
+
+  .news-img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+.news-img-overview{
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+.article-body-style{
+  background-color: papayawhip;
+  padding: 5%;
+}
+
+.btn-news-back{
+  background-color: brown;
+    border-color: brown;
+    a{
+      text-decoration: none;
+      color: white!important;
+      :hover {
+        color: white;
+    }
+    }
+
+}

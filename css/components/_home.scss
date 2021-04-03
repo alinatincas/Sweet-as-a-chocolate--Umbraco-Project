@@ -1,0 +1,26 @@
+@import '../abstracts/globals'; 
+
+.home-body{
+    color: $white;
+    font-size: 2em;
+}
+
+.home-card{
+    border: none;
+    margin: -1%;
+    text-align: center;
+
+}
+
+.background-image{
+    opacity: 50%;
+}
+
+.card-img{
+    height: 400px;
+    object-fit: cover;
+}
+
+.home-card-img{
+    height: 800px;
+}

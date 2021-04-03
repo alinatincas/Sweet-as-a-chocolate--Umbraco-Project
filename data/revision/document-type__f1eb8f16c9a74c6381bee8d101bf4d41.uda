@@ -1,0 +1,47 @@
+{
+  "DefaultTemplate": "umb://template/4bc93b5603234d86acbb5bf99d4e3f91",
+  "AllowedTemplates": [
+    "umb://template/4bc93b5603234d86acbb5bf99d4e3f91"
+  ],
+  "Icon": "icon-folder color-yellow",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": true,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/aa67cee4013d4af5bcdb1aa369d708af"
+    ]
+  },
+  "Parent": null,
+  "CompositionContentTypes": [
+    "umb://document-type/a55cb3e7550f4275b2f69f7c76683f6e"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/f1eb8f16c9a74c6381bee8d101bf4d41",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/a55cb3e7550f4275b2f69f7c76683f6e",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/aa67cee4013d4af5bcdb1aa369d708af",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/4bc93b5603234d86acbb5bf99d4e3f91",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "News Area",
+  "Alias": "newsArea",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "4.0.4"
+}

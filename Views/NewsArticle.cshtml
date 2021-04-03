@@ -1,0 +1,50 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArticle>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "MasterLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card bg-dark text-white home-card">
+            @{
+                var examp = Model.Value<IPublishedContent>("newsImage");
+                if (examp != null)
+                {
+                    <img src="@examp.Url" class=" background-image-contact card-img image-fluid" alt="@examp.Value("alt")" />
+                }
+            }
+            <div class="card-img-overlay contact-body">
+              <p class="card-title">@Model.Value("newsTitle")</p>              
+            </div>
+          </div>       
+      </div>
+    </div>
+	<div class="row article-body-style">
+		<div class="col-md-5 offset-md-1 home-text">
+			<h1>@Model.Value("newsTitle")</h1>
+			<p> 
+				@Model.Value("newsContent") <br>
+				<b>Author: @Model.Value("newsAuthor") </b> 
+			</p>
+		</div>
+		<div class="col-md-5">
+			@{
+				var typedMediaPickerSingle = Model.Value<IPublishedContent>("newsImage");
+					if (typedMediaPickerSingle != null)
+					{
+						<img src="@typedMediaPickerSingle.Url" class=" shadow news-img image-fluid img-news-article" alt="@typedMediaPickerSingle.Value("alt")" />
+					}
+			}	
+		</div>
+		<div class="col-md-11 offset-md-1 ">
+			<button type="button" class="btn btn-news-back">
+			@Html.ActionLink("Back to previous page", null, null, null, new { href = Request.UrlReferrer})
+			</button>
+		</div>
+    </div>
+</div>
+
+    
+
+

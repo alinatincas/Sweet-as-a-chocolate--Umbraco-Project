@@ -1,0 +1,177 @@
+main {
+  background-color: wheat;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+#copyright {
+  padding: 2%;
+  margin: 2%;
+  color: brown !important;
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-light {
+  background-color: wheat;
+}
+
+.nav-container {
+  padding: 2%;
+}
+
+.navbar-brand {
+  color: brown !important;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.a-nav {
+  font-size: 150%;
+  color: brown !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.home-body {
+  color: white;
+  font-size: 2em;
+}
+
+.home-card {
+  border: none;
+  margin: -1%;
+  text-align: center;
+}
+
+.background-image {
+  opacity: 50%;
+}
+
+.card-img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-card-img {
+  height: 800px;
+}
+
+.background-image-contact {
+  width: 100%;
+  height: 500px;
+  opacity: 50%;
+}
+
+.contact-body {
+  color: white;
+  top: 50%;
+  font-size: 300%;
+}
+
+.contact-body-text {
+  background-color: papayawhip;
+  margin: 0%;
+  padding: 1;
+}
+
+.umbraco-forms-label {
+  color: brown;
+  font-weight: bold;
+}
+
+.field-validation-error {
+  display: none;
+}
+
+.umbraco-forms-field-wrapper {
+  margin-bottom: 5px;
+}
+
+/* .umbraco-forms-form{
+  } */
+.card-text-contact {
+  margin-top: 2%;
+}
+
+.card-text-contact p {
+  text-align: center;
+}
+
+.umbraco-forms-form .umbraco-forms-navigation .btn {
+  background-color: brown;
+  color: white;
+  margin-top: -4%;
+  margin-bottom: 3%;
+}
+
+.news-bg-color {
+  background-color: papayawhip;
+  margin: -1%;
+  padding: 2%;
+}
+
+.news-bg-color a:hover {
+  color: brown;
+}
+
+.articlepreview {
+  margin-bottom: 5%;
+}
+
+.articlepreview a {
+  text-decoration: none;
+  color: brown;
+}
+
+.articlepreview p {
+  margin-bottom: 0rem;
+}
+
+.article-title {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.news-img {
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-img-overview {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article-body-style {
+  background-color: papayawhip;
+  padding: 5%;
+}
+
+.btn-news-back {
+  background-color: brown;
+  border-color: brown;
+}
+
+.btn-news-back a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.btn-news-back a :hover {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

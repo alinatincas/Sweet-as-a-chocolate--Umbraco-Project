@@ -1,0 +1,51 @@
+@import '../abstracts/globals'; 
+
+.background-image-contact {
+    width: 100%;
+    height: 500px;
+    opacity: 50%;
+  }
+  
+  .contact-body {
+    color: white;
+    top: 50%;
+    font-size: 300%;
+  }
+  
+  .contact-body-text {
+    background-color: papayawhip;
+    margin: 0%;
+    padding: 1;
+  }
+  
+  .umbraco-forms-label {
+    color: brown;
+    font-weight: bold;
+  }
+  
+  .field-validation-error {
+    display: none;
+  }
+  
+  .umbraco-forms-field-wrapper {
+    margin-bottom: 5px;
+  }
+  
+  /* .umbraco-forms-form{
+  } */
+  .card-text-contact {
+    margin-top: 2%;
+  }
+  
+  .card-text-contact p {
+    text-align: center;
+  }
+
+  .umbraco-forms-form .umbraco-forms-navigation{
+    .btn{
+      background-color: brown;
+      color: white;
+      margin-top: -4%;
+      margin-bottom: 3%;
+    }
+  }

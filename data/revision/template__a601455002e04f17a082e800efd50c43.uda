@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/MasterLayout.cshtml",
+  "Master": null,
+  "Udi": "umb://template/a601455002e04f17a082e800efd50c43",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/MasterLayout.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Master layout",
+  "Alias": "MasterLayout",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "4.0.4"
+}

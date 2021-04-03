@@ -1,0 +1,40 @@
+{
+  "DefaultTemplate": "umb://template/c4207acb490b49da8f9a8d50c37b8304",
+  "AllowedTemplates": [
+    "umb://template/c4207acb490b49da8f9a8d50c37b8304"
+  ],
+  "Icon": "icon-vcard color-red",
+  "Thumbnail": "folder.png",
+  "Description": "Create a contact page with a contact form",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": null,
+  "CompositionContentTypes": [
+    "umb://document-type/a55cb3e7550f4275b2f69f7c76683f6e"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/6a2fe8e4b3844224bb94a2b6181338db",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/a55cb3e7550f4275b2f69f7c76683f6e",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/c4207acb490b49da8f9a8d50c37b8304",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Contact page",
+  "Alias": "contactPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "4.0.4"
+}

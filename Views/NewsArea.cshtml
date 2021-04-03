@@ -1,0 +1,71 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArea>
+@using ContentModels = Umbraco.Web.PublishedModels;
+
+@{
+	Layout = "MasterLayout.cshtml";
+}
+<div class="container-fluid">
+	<div class="row">
+      <div class="col-md-12">
+          <div class="card bg-dark text-white home-card">
+            @{
+                var typedMediaPickerSingle = Model.Value<IPublishedContent>("banner");
+                if (typedMediaPickerSingle != null)
+                {
+                    <img src="@typedMediaPickerSingle.Url" class=" background-image-contact card-img image-fluid" alt="@typedMediaPickerSingle.Value("alt")" />
+                }
+            }
+            <div class="card-img-overlay contact-body">
+              <p class="card-title">@Model.Value("title")</p>              
+            </div>
+          </div>       
+     </div>
+      <div class="row contact-body-text">
+            <div class="col-md-12  card-text-contact">
+                <div>
+                    <h3 class="card-text">@Model.Value("contentText")</h3>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="row news-bg-color">
+      <div class="col-md-6 offset-md-3">
+        @{
+            var selection = Umbraco.Content(Guid.Parse("42fc62b6-f351-40fd-a414-a23891d5194e"))
+              .ChildrenOfType("newsArticle")
+              .Where(x => x.IsVisible())
+              .OrderByDescending(x => x.CreateDate);
+            }
+        <ul>
+          
+          @foreach (var item in selection)
+          {  
+            <div class="articletitle">
+              <h5><a href="@item.Url" class="article-title">@item.Name</a></h5>
+            </div>
+            var image = item.Value<IPublishedContent>("newsImage");
+                if (image != null)
+              {
+                <img src="@image.Url"  class="shadow news-img-overview image-fluid img-news-article"/>
+              }
+            <article class="news-previews">
+              <div class="articlepreview">
+                @Html.Truncate(item.Value("newsContent").ToString(), 350, true)
+                  <a href="@item.Url" class="read-more-btn-news">Read More</a>
+              </div>
+            </article>   
+          }
+        </ul>
+      </div>
+    </div>
+</div>
+
+@* 	<article class="special">
+		<div class="articletitle"><a href="@item.Url">@item.Name</a>
+		</div>
+	    <div class="articlepreview">@Html.Truncate(item.Value("newsContent").ToString(), 100, true)
+		</div>
+	    <div class="article-image" style="background-image: url('@item.Value("newsImage")')">
+	        
+	    </div>
+</article> *@
